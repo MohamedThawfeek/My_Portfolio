@@ -1,0 +1,157 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.container h1 {
+  margin: 30px auto;
+  text-transform: capitalize;
+  font-family: cursive;
+  font-size: 45px;
+  letter-spacing: 1px;
+  background: linear-gradient(60deg, #dd0796c0, #f89a0d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.5;
+  margin: 60px auto;
+  flex-wrap: wrap;
+}
+
+.education h2 {
+  font-size: 25px;
+  font-family: cursive;
+  text-shadow: 1px 0 2px rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
+}
+
+.education .icon {
+  margin-right: 10px;
+  color: #202020;
+  font-size: 30px;
+}
+
+.education .details {
+  margin: 30px;
+}
+
+.education .details h4 {
+  font-size: 25px;
+  margin-left: 40px;
+  padding-top: 30px;
+  font-family: monospace;
+  text-transform: capitalize;
+}
+
+.education .details p {
+  font-size: 18px;
+  margin-left: 40px;
+  padding-bottom: 10px;
+  color: gray;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.education .details small {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+  color: #202020;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+  padding-bottom: 30px;
+}
+.education hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tech {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 0.5;
+  margin: 60px auto;
+}
+
+.tech h2 {
+  font-size: 25px;
+  font-family: cursive;
+  text-shadow: 1px 0 2px rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
+}
+
+.tech .details {
+  margin: 30px;
+}
+
+.tech .details h4 {
+  font-size: 25px;
+  margin-left: 10px;
+  padding-top: 30px;
+  font-family: monospace;
+  text-transform: capitalize;
+}
+
+.tech .details p {
+  font-size: 18px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  color: gray;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.tech .details small {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  color: #202020;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+  padding-bottom: 30px;
+  text-transform: capitalize;
+}
+.tech hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tech .icon {
+  margin-right: 10px;
+  color: rgba(235, 29, 29, 0.767);
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 953px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .container h1 {
+    font-size: 25px;
+  }
+
+  .education {
+    margin: 40px auto;
+  }
+  .tech {
+    margin: 40px auto;
+  }
+}

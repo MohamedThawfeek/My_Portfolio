@@ -1,0 +1,228 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.container h1 {
+  font-size: 45px;
+  background: linear-gradient(60deg, #dd0796c0, #f89a0d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-family: cursive;
+  letter-spacing: 1px;
+  margin: 10px auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  margin: 60px;
+  flex-wrap: wrap;
+}
+
+.address .location {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  padding: 30px;
+}
+
+.icon1 {
+  margin-right: 30px;
+  color: #ff4800;
+  background: #f15e23a4;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  font-size: 40px;
+}
+
+.address .email {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  padding: 30px;
+}
+
+.address .email .icon2 {
+  margin-right: 30px;
+  color: green;
+  background: lightgreen;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons2 {
+  font-size: 40px;
+}
+
+.address .phone {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  padding: 30px;
+}
+
+.address .phone .icon3 {
+  margin-right: 30px;
+  color: blueviolet;
+  background: #c418a777;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons3 {
+  font-size: 40px;
+}
+
+.info h2 {
+  font-size: 25px;
+  font-family: cursive;
+  text-transform: capitalize;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+  padding-bottom: 5px 0;
+  letter-spacing: 0.5px;
+}
+
+.info p {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  margin: 80px auto;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  text-transform: capitalize;
+  font-size: 16px;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+}
+
+form input {
+  padding: 10px;
+  width: 60%;
+  margin: 0 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+form textarea {
+  padding: 10px;
+  width: 60%;
+  margin: 0 8px;
+  text-transform: capitalize;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+form .button {
+  padding: 5px;
+  width: 60px;
+  margin: 10px 8px;
+  background: blue;
+  text-transform: capitalize !important;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+form button:hover {
+  background: transparent;
+  color: blue;
+}
+
+@media only screen and (max-width: 953px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container h1 {
+    font-size: 25px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  form input {
+    width: 90vw;
+    margin: 10px 8px;
+    border: 1px solid black;
+  }
+
+  form textarea {
+    width: 90vw;
+    margin: 10px 8px;
+    border: 1px solid black;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container h1 {
+    font-size: 25px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  form input {
+    width: 90vw;
+    margin: 10px 0;
+    border: 1px solid black;
+  }
+
+  form textarea {
+    width: 90vw;
+    margin: 10px 0;
+    border: 1px solid black;
+  }
+}
