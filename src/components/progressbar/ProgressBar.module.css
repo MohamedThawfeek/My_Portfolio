@@ -1,0 +1,154 @@
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin: 15px 30px;
+}
+
+.outer_circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner_circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.4),
+    inset 4px 4px 6px -1px rgba(255, 255, 255, 0.5),
+    inset -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    inset 0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    inset 0px 12px 10px -10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.number img {
+  object-fit: contain;
+  width: 60px;
+}
+
+.number h5 {
+  font-weight: 800;
+  color: #555;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 3s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+.circle1 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim1 3s linear forwards;
+}
+
+@keyframes anim1 {
+  100% {
+    stroke-dashoffset: 130;
+  }
+}
+
+.circle2 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim2 3s linear forwards;
+}
+
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 80;
+  }
+}
+
+.circle3 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim4 3s linear forwards;
+}
+
+@keyframes anim4 {
+  100% {
+    stroke-dashoffset: 160;
+  }
+}
+
+.circle4 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim3 3s linear forwards;
+}
+
+@keyframes anim3 {
+  100% {
+    stroke-dashoffset: 260;
+  }
+}
+
+@media only screen and (max-width: 953px) {
+  .skill {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .skill {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    margin: 55px 100px 55px 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .skill {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 55px 95px 55px 15px;
+  }
+}

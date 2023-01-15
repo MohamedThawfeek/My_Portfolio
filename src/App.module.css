@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+.arrow {
+  background: #00000077;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  font-size: 30px !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background: transparent;
+  color: #ff8c00;
+}
+
+.up {
+  font-size: 30px;
+  margin-top: 5px;
+}

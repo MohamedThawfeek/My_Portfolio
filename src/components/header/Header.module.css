@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+.container {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.head {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.active {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+}
+
+.head .title {
+  text-transform: capitalize;
+  font-family: cursive;
+  text-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-left: 60px;
+}
+
+.active .title {
+  text-transform: capitalize;
+  font-family: "Secular One", sans-serif;
+  text-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-left: 60px;
+  color: black;
+}
+
+.nav_menu {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-gap: 40px;
+  width: 70vw;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  padding: 5px;
+}
+
+.head .nav_menu li {
+  cursor: pointer;
+  font-weight: 600;
+  color: #555;
+}
+
+.active .nav_menu li {
+  cursor: pointer;
+  font-weight: 600;
+  color: #000;
+  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.head .nav_menu li:hover {
+  color: #f75023;
+}
+
+.active .nav_menu li:hover {
+  color: #f75023;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 5px;
+  margin-top: 3px;
+  animation: slide 2s forwards infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(6px);
+  }
+  25% {
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  75% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(6px);
+  }
+}
+
+.head .nav_menu .header__option_active {
+  color: #f75023;
+}
+
+.active .nav_menu .header__option_active {
+  color: #f75023;
+}
+
+.icons {
+  margin-left: auto !important;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.icons .menuIcons {
+  font-size: 30px !important;
+  display: none;
+}
+
+.btn {
+  width: 145px;
+  height: 45px;
+  border: 1px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-left: -20px;
+  padding: 0 4px;
+  font-weight: 600;
+}
+
+.btn a {
+  color: black;
+}
+
+.active .btn {
+  width: 145px;
+  height: 45px;
+  border: 1px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  cursor: pointer;
+  padding: 0 4px;
+  font-weight: 600;
+}
+
+.active .btn a {
+  color: black;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  background: orange;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover::before {
+  top: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn a {
+  z-index: 1;
+}
+
+@media only screen and (max-width: 953px) {
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.473);
+    left: -100%;
+    top: 60px;
+    transition: all 1s ease;
+    color: whitesmoke;
+    list-style: none;
+    opacity: 0;
+    padding: 0;
+  }
+
+  .nav_menu_active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.473);
+    left: 0;
+    top: 60px;
+    width: 100%;
+    transition: all 1s ease;
+    color: whitesmoke;
+    opacity: 1;
+    list-style: none;
+    padding: 1rem;
+  }
+
+  .nav_menu_active li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .nav_menu_active li:hover {
+    color: #ff8c00;
+  }
+  .nav_menu_active .btn {
+    margin: 10px 0;
+    background: #ff8c00;
+    color: whitesmoke;
+  }
+  .icons .menuIcons {
+    display: block;
+  }
+
+  .active .menuIcons {
+    display: block;
+    color: black;
+  }
+
+  .head .title {
+    margin-left: 20px;
+  }
+
+  .active .title {
+    margin-left: 20px;
+    color: black;
+  }
+}
